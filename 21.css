@@ -18,13 +18,17 @@ justify-self: center;}
     width:80px; 
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
-    display: inline-block;}
+    display: inline-block;
+    text-align: center;
+    padding-top:8px}
 
 #dealerCard2{height:100px; 
     width:80px; 
      background-color: rgb(255, 255, 255);
     border-radius: 20px;
-    display: inline-block;}
+    display: inline-block;
+    text-align: center;
+    padding-top:8px}
 
 #userCards{justify-self: center; margin: 5px}
 
@@ -32,13 +36,17 @@ justify-self: center;}
     width:80px; 
     background-color: rgb(255, 255, 255);
     border-radius: 20px; 
-    display: inline-block;}
+    display: inline-block;
+    text-align: center;
+    padding-top:8px}
 
 #userCard2{height:100px; 
     width:80px; 
     background-color: rgb(255, 255, 255);
     border-radius: 20px; 
-    display: inline-block;}
+    display: inline-block;
+    text-align: center;
+    padding-top:8px}
 
 #hitButton{display:none;
     background-color: #13aa52;
