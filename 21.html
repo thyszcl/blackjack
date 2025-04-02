@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>blackJack</title>
+	<link rel="stylesheet" href="21.css">
+</head>
+
+<body>
+	<div id="table"> 
+		<div id='dealerCards'>
+			<div id="dealerCard1" ></div>
+			<div id="dealerCard2" ></div>
+		</div>
+		<div id="userCards">
+			<div id="userCard1" ></div>
+			<div id="userCard2" ></div>
+	    </div>
+	</div>
+	<p id="stats"></p>
+	<button id='dealButton'>Deal</button>
+	<button id="hitButton" onclick="hit()">Hit</button>
+	<button id='standButton' onclick="stand()">Stand</button>
+	<button id='resetButton' onclick = 'location.reload();'>Reset</button>
+</body>
+	<script src="21.js"></script>
+</html>
