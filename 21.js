@@ -195,16 +195,22 @@ function checkWinStart(){
     stats.innerHTML = `Tie! Both of you had blackjack --Dealer:${dealerHand[0].face} ${dealerHand[1].face} You:${userHand[0].face} ${userHand[1].face}`
     dealerCard1.innerHTML = `${dealerHand[0].face}`
     dealerCard2.innerHTML = `${dealerHand[1].face}`
+    hitButton.remove()
+    standButton.remove()
   }
   if (dealerHandValue[0] === 21 || dealerHandValue[0] === 22){
     stats.innerHTML = `Blackjack! Dealer wins -- Dealer had ${dealerHand[0].face} ${dealerHand[1].face}`
     dealerCard1.innerHTML = `${dealerHand[0].face}`
     dealerCard2.innerHTML = `${dealerHand[1].face}`
+    hitButton.remove()
+    standButton.remove()
   }
   if (userHandValue[0] === 21 || userHandValue[0] === 22){
     stats.innerHTML = `Blackjack! You win -- You had ${userHand[0].face} ${userHand[1].face}`
     dealerCard1.innerHTML = `${dealerHand[0].face}`
     dealerCard2.innerHTML = `${dealerHand[1].face}`
+    hitButton.remove()
+    standButton.remove()
   }
 
 }
@@ -230,15 +236,23 @@ function stand(){
 
   if (userValue > 21){
     stats.innerHTML = `You've bust --- Dealer has ${dealerValue}`
+    hitButton.remove()
+    standButton.remove()
   }
   else if(userValue < dealerValue){
     stats.innerHTML = `You've lost --- Dealer has ${dealerValue}, You have ${userValue}`
+    hitButton.remove()
+    standButton.remove()
   }
   else if(dealerValue === userValue){
     stats.innerHTML = `Its a Tie`
+    hitButton.remove()
+    standButton.remove()
   }
   else if(userValue > dealerValue){
     stats.innerHTML = `You win --- You had ${userValue}, Dealer had ${dealerValue}`
+    hitButton.remove()
+    standButton.remove()
   }
   dealerCard1.innerHTML = `${dealerHand[0].face}`
   dealerCard2.innerHTML = `${dealerHand[1].face}`
